@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Horse Trading Academy | System Over Sentiment</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBlack: '#050505',
+                        charcoal: '#121212',
+                        luxuryGold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('assets/hero_background.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #050505;
+            color: white;
+        }
+
+        .gold-glow {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .gold-border:focus {
+            border-color: #D4AF37;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+            outline: none;
+        }
+
+        /* Ken Burns Effect */
+        @keyframes ken-burns {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .animate-ken-burns {
+            animation: ken-burns 20s ease-out forwards;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+
+    <!-- HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="assets/hero_background.png" alt="Trading Desk"
+                class="w-full h-full object-cover opacity-60 animate-ken-burns">
+            <div class="absolute inset-0 bg-gradient-to-b from-deepBlack/80 via-deepBlack/40 to-deepBlack"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto space-y-6">
+            <p class="text-luxuryGold font-medium tracking-[0.2em] text-sm md:text-base uppercase" data-aos="fade-up"
+                data-aos-delay="0">Dark Horse Trading
+                Academy</p>
+            <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl font-black leading-tight tracking-tight text-white gold-glow"
+                data-aos="fade-up" data-aos-delay="100">
+                SYSTEM OVER<br><span class="text-luxuryGold">SENTIMENT.</span>
+            </h1>
+            <p class="font-sans text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed"
+                data-aos="fade-up" data-aos-delay="300">
+                Ujjain's First Live Trading Floor. Managed by an Ex-Bureaucrat.
+            </p>
+
+            <div class="pt-8" data-aos="fade-up" data-aos-delay="500">
+                <a href="#leads-form"
+                    class="group relative inline-flex items-center justify-center px-8 py-4 bg-luxuryGold text-deepBlack font-heading font-bold text-lg tracking-wide uppercase transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(212,175,55,0.6)]">
+                    Apply For Seat
+                    <span
+                        class="absolute inset-0 border border-luxuryGold transform translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300 pointer-events-none"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-luxuryGold/50">
+            <i class="fa-solid fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- AUTHORITY SECTION -->
+    <section class="py-24 bg-deepBlack relative border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Image -->
+            <div class="relative order-2 md:order-1" data-aos="fade-right">
+                <div class="absolute -inset-4 bg-luxuryGold/10 blur-xl rounded-full opacity-50"></div>
+                <img src="assets/authority_figure.png" alt="Pawan Patidar"
+                    class="relative z-10 w-full h-auto rounded-sm gold-border grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+
+            <!-- Content -->
+            <div class="order-1 md:order-2 space-y-8" data-aos="fade-left">
+                <div>
+                    <h2 class="font-heading text-luxuryGold text-sm tracking-widest uppercase mb-2">The Authority</h2>
+                    <h3 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">PAWAN PATIDAR</h3>
+                    <div class="h-1 w-20 bg-luxuryGold"></div>
+                </div>
+
+                <div class="space-y-4 text-gray-400 font-light text-lg leading-relaxed">
+                    <p>
+                        <strong class="text-white font-medium">Ex-Bureaucrat.</strong> Institutional Trader. The
+                        architect behind the Dark Horse Protocol.
+                    </p>
+                    <p>
+                        In a market driven by emotion and noise, we operate in the shadows of data. We don't guess; we
+                        execute. This is not a course. It is an induction into high-probability algorithmic thinking.
+                    </p>
+                </div>
+
+                <div class="flex items-center space-x-4 text-luxuryGold">
+                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    <span class="font-heading font-bold uppercase tracking-wider text-sm">Institutional Grade
+                        Mentorship</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKSHOP SECTION (THE OFFER) -->
+    <section class="py-24 bg-charcoal relative overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-deepBlack/50 to-transparent"></div>
+        <div
+            class="absolute -left-20 top-20 text-[200px] font-heading font-black text-white/5 select-none pointer-events-none">
+            01</div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <span
+                class="inline-block py-1 px-3 border border-luxuryGold/50 rounded-full text-luxuryGold text-xs font-bold tracking-widest uppercase mb-6 bg-deepBlack/50">
+                Exclusive Event
+            </span>
+            <h2 class="font-heading text-4xl md:text-6xl font-black text-white mb-6 uppercase">
+                The "Reality Check" <span class="text-luxuryGold">Workshop</span>
+            </h2>
+            <p class="font-sans text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
+                "Stop Gambling. <span class="text-white border-b-2 border-luxuryGold">Start Engineering your
+                    Wealth.</span>"
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+                <div class="bg-deepBlack p-6 border border-white/10 hover:border-luxuryGold/50 transition-colors duration-300"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-regular fa-calendar text-luxuryGold text-3xl mb-4"></i>
+                    <h4 class="font-heading text-white font-bold text-lg mb-2">THIS SUNDAY</h4>
+                    <p class="text-gray-500 text-sm">Specific dates released to applicants.</p>
+                </div>
+                <div class="bg-deepBlack p-6 border border-white/10 hover:border-luxuryGold/50 transition-colors duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-ticket text-luxuryGold text-3xl mb-4"></i>
+                    <h4 class="font-heading text-white font-bold text-lg mb-2">FREE ACCESS</h4>
+                    <p class="text-gray-500 text-sm">Strictly for the first 30 Applicants.</p>
+                </div>
+                <div class="bg-deepBlack p-6 border border-white/10 hover:border-luxuryGold/50 transition-colors duration-300"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-location-dot text-luxuryGold text-3xl mb-4"></i>
+                    <h4 class="font-heading text-white font-bold text-lg mb-2">OFFLINE</h4>
+                    <p class="text-gray-500 text-sm">Live in Ujjain. Face to face.</p>
+                </div>
+            </div>
+
+            <!-- Location Link -->
+            <div class="text-center">
+                <a href="https://www.google.com/maps/search/?api=1&query=HP+Petrol+Pump+Devsara+Filling+Station+Rishi+Nagar+Ujjain"
+                    target="_blank"
+                    class="inline-flex items-center space-x-2 text-gray-500 hover:text-luxuryGold transition-colors duration-300 text-sm font-medium group">
+                    <span class="grayscale group-hover:grayscale-0 transition-all">📍</span>
+                    <span
+                        class="tracking-wide text-xs md:text-sm transition-colors duration-300 group-hover:text-luxuryGold">HP
+                        Petrol Pump Devsara Filling Station Rishi Nagar,
+                        Ujjain</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEAD FORM SECTION -->
+    <section id="leads-form" class="py-24 bg-deepBlack relative">
+        <div class="max-w-2xl mx-auto px-6 h-full" data-aos="zoom-in">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">SECURE YOUR SEAT</h2>
+                <div class="h-0.5 w-16 bg-luxuryGold mx-auto"></div>
+                <p class="mt-4 text-gray-400 text-sm">Enter your details for the screening process.</p>
+            </div>
+
+            <form id="workshopForm" class="space-y-6">
+                <!-- Name -->
+                <div class="group">
+                    <label class="block text-xs font-bold text-luxuryGold uppercase tracking-widest mb-2">Full
+                        Name</label>
+                    <input type="text" name="name" required placeholder="Enter your full name"
+                        class="w-full bg-charcoal text-white border border-white/10 p-4 rounded-none focus:border-luxuryGold focus:shadow-[0_0_10px_rgba(212,175,55,0.2)] focus:outline-none transition-all duration-300 placeholder-gray-600 font-sans">
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="group">
+                    <label class="block text-xs font-bold text-luxuryGold uppercase tracking-widest mb-2">WhatsApp
+                        Number</label>
+                    <input type="tel" name="whatsapp" required placeholder="+91 XXXXX XXXXX"
+                        class="w-full bg-charcoal text-white border border-white/10 p-4 rounded-none focus:border-luxuryGold focus:shadow-[0_0_10px_rgba(212,175,55,0.2)] focus:outline-none transition-all duration-300 placeholder-gray-600 font-sans">
+                </div>
+
+                <!-- Profession -->
+                <div class="group">
+                    <label class="block text-xs font-bold text-luxuryGold uppercase tracking-widest mb-2">Current
+                        Status</label>
+                    <div class="relative">
+                        <select name="profession" required
+                            class="w-full bg-charcoal text-white border border-white/10 p-4 rounded-none focus:border-luxuryGold focus:shadow-[0_0_10px_rgba(212,175,55,0.2)] focus:outline-none appearance-none transition-all duration-300 font-sans">
+                            <option value="" disabled selected>Select your Profession</option>
+                            <option value="Student">Student</option>
+                            <option value="Job">Job / Corporate</option>
+                            <option value="Business">Business Owner</option>
+                        </select>
+                        <div
+                            class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-luxuryGold">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Filter -->
+                <div class="group">
+                    <label class="block text-xs font-bold text-luxuryGold uppercase tracking-widest mb-2">Why do you
+                        want to join?</label>
+                    <div class="relative">
+                        <select name="reason" required
+                            class="w-full bg-charcoal text-white border border-white/10 p-4 rounded-none focus:border-luxuryGold focus:shadow-[0_0_10px_rgba(212,175,55,0.2)] focus:outline-none appearance-none transition-all duration-300 font-sans">
+                            <option value="" disabled selected>Select your Goal</option>
+                            <option value="Quick Money">To make Quick Money</option>
+                            <option value="Learn System">To Learn the System</option>
+                        </select>
+                        <div
+                            class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-luxuryGold">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitBtn"
+                    class="w-full bg-luxuryGold text-deepBlack font-heading font-black text-lg py-5 uppercase tracking-widest hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(212,175,55,0.6)] mt-8 relative flex items-center justify-center">
+                    <span id="btnText">SECURE MY SEAT</span>
+                    <span id="btnLoader" class="hidden absolute right-6">
+                        <i class="fa-solid fa-circle-notch fa-spin"></i>
+                    </span>
+                </button>
+                <p class="mt-3 text-center text-gray-500 text-xs font-medium uppercase tracking-wide">
+                    Limited to 30 Seats only. No Walk-ins allowed.
+                </p>
+            </form>
+
+            <p class="mt-6 text-center text-gray-600 text-xs">
+                By submitting, you agree to our <a href="privacy.html" target="_blank"
+                    class="underline hover:text-luxuryGold transition-colors duration-300">Privacy Protocol</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-8 border-t border-white/5 text-center">
+        <p class="text-gray-500 text-xs font-sans tracking-wider">
+            &copy; 2026 DARK HORSE TRADING ACADEMY. UJJAIN. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        // CONFIGURATION
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbywU1ETs22FJ-atjjGfdpmPpU8xjzD1lSKWTHK2zJ1X3AGHIfuDgSvkJ3RFNkRUarRY/exec'; // Live Backend
+        const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/KvVJAhZl9J80P691YCmeDo'; // Real Link
+
+        const form = document.getElementById('workshopForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnLoader = document.getElementById('btnLoader');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // 1. Loading State
+            submitBtn.disabled = true;
+            btnText.textContent = "PROCESSING...";
+            btnLoader.classList.remove('hidden');
+            form.classList.add('opacity-75');
+
+            // 2. Collect Data
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+
+            // 3. Send to Google Apps Script
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Important for Google Apps Script
+                cache: 'no-cache',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                redirect: 'follow',
+                referrerPolicy: 'no-referrer',
+                body: JSON.stringify(data)
+            })
+                .then(() => {
+                    // 4. Success Handling
+                    // Since 'no-cors' returns an opaque response, we assume success if no network error.
+                    // In a production env with proper CORS from backend, we would check response.ok or json.result
+
+                    setTimeout(() => { // Artifical delay for UX if fetch is too fast
+                        alert("SEAT CONFIRMED. Redirecting to Protocol Room...");
+                        window.location.href = WHATSAPP_GROUP_URL;
+
+                        // Reset Form (optional, as we are redirecting)
+                        form.reset();
+                        submitBtn.disabled = false;
+                        btnText.textContent = "SECURE MY SEAT";
+                        btnLoader.classList.add('hidden');
+                        form.classList.remove('opacity-75');
+                    }, 1000);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("SYSTEM ERROR. Please contact support or try again.");
+
+                    // Reset State
+                    submitBtn.disabled = false;
+                    btnText.textContent = "SECURE MY SEAT";
+                    btnLoader.classList.add('hidden');
+                    form.classList.remove('opacity-75');
+                });
+        });
+    </script>
+</body>
+
+</html>
